@@ -1,0 +1,33 @@
+/* *{
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(194, 194, 170);
+} */
+
+.heading{
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    height: 70px;
+    background-color: rgb(41, 42, 37);
+    color: rgb(186, 190, 193);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+body{
+    background-color: rgb(194, 194, 170);
+}
+
+.container{
+    padding-top: 20px;
+    margin-top: 50px;
+}
+
+.col-sm-4{
+    margin-top: 40px;
+}
+
+#submit{
+    margin-top: 30px;
+}

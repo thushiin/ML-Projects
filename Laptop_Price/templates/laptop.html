@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/laptopstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <h1 class="heading">LAPTOP PRICE PREDICTION</h1>
+    <form action="predict" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label id="comp">Company:</label><br>
+                    <select name="company" id="comp1" class="selectpicker form-control">
+                        {% for company in Company %}
+                    <option id="comp2" value='{{ loop.index0 }}'>{{ company }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label id="type">TypeName:</label><br>
+                    <select name="typename" id="type1" class="selectpicker form-control">
+                        {% for typename in TypeName %}
+                    <option id="type2" value='{{ loop.index0 }}'>{{ typename }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label id="inches">Inches:</label><br>
+                    <select name="inches" id="type1" class="selectpicker form-control">
+                        {% for inches in Inches %}
+                    <option id="type2" value='{{ loop.index0 }}'>{{ inches }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label id="cpu">Cpu:</label><br>
+                    <select name="cpu" id="type1" class="selectpicker form-control">
+                        {% for cpu in Cpu %}
+                    <option id="type2" value='{{ loop.index0 }}'>{{ cpu }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label id="ram">Ram:</label><br>
+                    <select name="ram" id="type1" class="selectpicker form-control">
+                        {% for ram in Ram %}
+                    <option id="type2" value='{{ loop.index0 }}'>{{ ram }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label id="type">Memory1:</label><br>
+                    <select name="memory1" id="type1" class="selectpicker form-control">
+                        {% for memory1 in Memory1 %}
+                    <option id="type2" value='{{ loop.index0 }}'>{{ memory1 }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label id="type">Memory2:</label><br>
+                    <select name="memory2" id="type1" class="selectpicker form-control">
+                        {% for memory2 in Memory2 %}
+                    <option id="type2" value='{{ loop.index0 }}'>{{ memory2 }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label id="type">Gpu:</label><br>
+                    <select name="gpu" id="type1" class="selectpicker form-control">
+                        {% for gpu in Gpu %}
+                    <option id="type2" value='{{ loop.index0 }}'>{{ gpu }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <label id="type">Operating System:</label><br>
+                    <select name="opsys" id="type1" class="selectpicker form-control">
+                        {% for opsys in OpSys %}
+                    <option id="type2" value='{{ loop.index0 }}'>{{ opsys }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+    
+    <center><button id="submit" type="submit">SUBMIT</button></center>
+</form>
+<h1 class="pred">{{ prediction }}</h1>
+</body>
+</html>

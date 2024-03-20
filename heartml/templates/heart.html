@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Heart disease prediction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/heartstyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1 class="heading">HEART DISEASE PREDICTION</h1>
+    <form action="predict" method="post"><div class="container">
+        <div class="row">
+        <div class="col-sm-4" >
+            <label>Age:</label>
+            <input type="text" name="age" id="age" required="1">
+            
+        </div>
+        <div class="col-sm-4" >
+        <label>Sex:</label>
+        <!-- <input type="text" class="sex" required="1"> -->
+        <select name="sex" id="sex">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select></div>
+        <div class="col-sm-4" >
+        <label>ChestPainType:</label>
+        <input type="text" name="chestpain" id='chest'required="1"></div>
+        <div class="col-sm-4">
+        <label>RestingBP:</label>
+        <input type="text" name="rbp" id='rbp'required="1"></div>
+        <div class="col-sm-4">
+        <label>Cholesterol:</label>
+        <input type="text" name="chol" id='chol' required="1"></div>
+        <div class="col-sm-4">
+        <label>RestingECG:</label>
+        <input type="text" name="ecg" id='ecg' required="1"></div>
+        <div class="col-sm-4">
+        <label>MaxHR:</label>
+        <input type="text" name="hr"  id='hr'required="1"></div>
+        <div class="col-sm-4">
+        <label>Oldpeak:</label>
+        <input type="text" name="oldp" id='oldp' required="1"></div>
+        <div class="col-sm-4">
+        <label>ST_Slope:</label>
+        <input type="text" name="stslope" id='stsl'required="1"></div></div></div><br><br>
+        <center><button type="submit">Submit</button></center>
+
+    </form>
+    <h1 class="output">{{ output }}</h1>
+</body>
+</html>
+
+
+
+<!-- <div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div> -->
+<!-- </div> -->
+<!-- </body>
+</html> -->

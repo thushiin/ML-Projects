@@ -1,0 +1,84 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: url(/static/images/heart-shape-stethoscope-arrangement.jpg) no-repeat center fixed;
+    background-size: cover;
+    
+    
+}
+
+.heading{
+    margin: 0px;
+    text-align: center;
+    padding: 20px;
+    color:rgb(93, 38, 38) ;
+    background-color: black;
+    opacity: 0.9;
+   
+}
+
+form{
+    margin: 100px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.col-sm-4{
+
+padding:10px;
+padding-bottom: 30px;
+}
+
+#age{
+    margin-left:70px;
+}
+
+#sex{
+    margin-left:80px;
+}
+
+#rbp{
+    margin-left:10px;
+}
+
+#chol{
+    margin-left:8px;
+}
+
+#ecg{
+    margin-left:30px;
+}
+
+#hr{
+    margin-left:35px;
+}
+
+#oldp{
+    margin-left:37px;
+}
+
+#stsl{
+    margin-left:53px;
+}
+
+button{
+    height: 35px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    
+}
+
+.output{
+    text-align: center;
+    
+    
+    color: wheat;
+    opacity: 1;
+
+}
